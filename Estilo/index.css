@@ -117,12 +117,8 @@
 /* Estilo Home */
 .home {
   width: 100%;
-  height: 100vh;
-  background-image: url("../conteudo/imagens/2017_10_28_semanamesasaopaulo_78.JPG");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100%;
+  background-color: #28a745;
 }
 
 .img-logo {
@@ -194,12 +190,8 @@
 /* Estilo Orquestra */
 .orquestra {
   width: 100%;
-  height: 100vh;
-  background-image: url("https://theatromunicipal.org.br/wp-content/uploads/2018/01/OrquestraSinfonicaMunicipal-Coral-GseSilva-Site8.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100%;
+  background-color: #ffc107;
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -265,13 +257,10 @@
 /* Estilo Musica Instrumental */
 .musicaInstrumental {
   width: 100%;
-  height: 100vh;
-  background-image: url("https://images.alphacoders.com/108/108181.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100%;
+  background-color: #28a745;
   padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .box-musica h2 {
@@ -311,12 +300,8 @@
 /* Estilo Galeria */
 .galeria {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #ffcb00;
-  background: -moz-radial-gradient(circle, #ffcb00 0%, #3ba434 100%);
-  background: -webkit-radial-gradient(circle, #ffcb00 0%, #3ba434 100%);
-  background: radial-gradient(circle, #ffcb00 0%, #3ba434 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb00",endColorstr="#3ba434",GradientType=1);
   padding-top: 75px;
   padding-bottom: 75px;
 }
@@ -379,13 +364,10 @@ button:active {
 /* Estilo Dança */
 .danca {
   width: 100%;
-  height: 100vh;
-  background-image: url("../conteudo/imagens/IMG_3963Rjcastilho.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100%;
+  background-color: #ffc107;
   padding-top: 65px;
+  padding-bottom: 65px;
 }
 .danca h2 {
   font-family: "Roboto", sans-serif;
@@ -431,10 +413,6 @@ button:active {
 .artesanato {
   height: 100%;
   background: #ffcb00;
-  background: -moz-linear-gradient(90deg, #ffcb00 0%, #3ba434 100%);
-  background: -webkit-linear-gradient(90deg, #ffcb00 0%, #3ba434 100%);
-  background: linear-gradient(90deg, #ffcb00 0%, #3ba434 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb00",endColorstr="#3ba434",GradientType=1);
   padding-bottom: 40px;
   padding-top: 75px;
 }
@@ -462,7 +440,7 @@ button:active {
   border-radius: 10%;
   margin: 0 auto;
   cursor: pointer;
-  height: 100vh;
+  height: 100%;
   max-height: 135.5px;
 }
 
@@ -470,11 +448,7 @@ button:active {
 /* Estilo Comidas Típicas*/
 .comidasTipicas {
   height: 100%;
-  background-image: url("../conteudo/imagens/1C7A5369Rjcastilho.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #28a745;
   padding-top: 75px;
   padding-bottom: 75px;
 }
@@ -526,11 +500,7 @@ button:active {
 /* Estilo Workshop */
 .workshop {
   height: 100%;
-  background-image: url("../conteudo/imagens/IMG_0676 LEO HAMU.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #ffc107;
   padding-top: 75px;
 }
 .workshop h2 {
@@ -574,13 +544,9 @@ button:active {
 /* Fim Workshop */
 /* Estilo Espaço Kids */
 .espacoKids {
-  background-image: url("../conteudo/imagens/1C7A5330Rjcastilho.JPG");
   width: 100%;
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100%;
+  background-color: #28a745;
   padding-top: 75px;
   padding-bottom: 85px;
 }
@@ -613,7 +579,8 @@ button:active {
 
 .icon-espaco-kids {
   color: yellow;
-  width: 130px;
+  width: 120px;
+  height: 120px;
   border: 3px solid yellow;
   padding: 3%;
   border-radius: 10px;
@@ -653,7 +620,7 @@ button:active {
   background: radial-gradient(circle, #3ba434 0%, #ffcb00 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3ba434",endColorstr="#ffcb00",GradientType=1);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

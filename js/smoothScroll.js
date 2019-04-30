@@ -40,7 +40,7 @@ var btnTopo = document.querySelector('.btnUpTopo');
 // var danca = document.querySelector('.nav-danca');
 
     btnTopo.addEventListener('click', function(){
-        smoothScroll('.home', 1000);
+        smoothScroll('.home', 2000);
     });
 
     // icoHome.addEventListener('click', function(){
