@@ -1,0 +1,950 @@
+<!-- Autor: Caique Sousa  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- style -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./Estilo/style.css"> -->
+    <!-- <link rel="stylesheet" href="./Estilo/style.scss"> -->
+    <link rel="stylesheet" href="./Estilo/index.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="./conteudo/imagens/favicon-farofa.png" type="image/x-icon" />
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <title>Farofa</title>
+
+</head>
+<body>
+    
+    <!-- Nav menu -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img class="img-logo-menu" alt="Farofa do Brasil"
+            src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/02/farofa-logo-1.png">
+        </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Início<span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Atrações 1
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="nav-link" href="#orquestra">Orquestra</a>
+                        <a class="nav-link" href="#musicaInstrumental">Musica Instrumental</a>
+                        <a class="nav-link" href="#galeria">Galeria de fotos</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Atrações 2
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="nav-link" href="#danca">Danças</a>
+                        <a class="nav-link" href="#artesanato">Artesanato</a>
+                        <a class="nav-link" href="#comidasTipicas">Comidas típicas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Atrações 3
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="nav-link" href="#workshop">Workshops</a>
+                        <a class="nav-link" href="#espacoKids">Espaço Kids</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq-box">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fim Nav menu -->
+
+    <!-- btnUpHome -->
+    <div>
+        <a href="#home">
+            <i class=" btnUpTopo fas fa-arrow-up"></i>
+        </a> 
+    </div>
+    
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="box-home">
+            <img class="img-logo"
+            src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/02/farofa-logo-1.png">
+            <!-- Cronometro -->
+            <div class="cronometro">
+                <p>Faltam: <span id="cronometro"></span></p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Debitis officia reiciendis maxime eaque, <br>
+                veniam quos porro aspernatur qui aliquam vero saepe natus assumenda
+                modi iste, doloremque eum unde, consequatur vel?
+            </p>
+        </div>
+        <div class="arrowHome">
+            <p>Confira as atrações logo abaixo</p>
+            <i class="icoArrowHome fas fa-angle-double-down"></i>
+        </div>
+    </section>
+
+    <!-- Orquestra -->
+    <section class="orquestra" id="orquestra">
+        <div>
+            <h2>Orquestra</h2>
+        </div>
+        <div class="row">
+            <div class="box-orquestra1 col-sm" data-anime="left">
+                <h5>Titulo tituloso</h5>
+                <p class="txt-orquestra">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                vulputate fringilla. Donec lacinia congue felis in faucibus.<br><br>
+
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                vulputate fringilla. Donec lacinia congue felis in faucibus.<br><br>
+                <span>Data:</span>XX/XX/XX <br>
+                <span>Horario:</span> XXh - XXh <br>
+                <span>Endereço:</span> XXXXXXXXXXXXXXXX <br><br>
+                <span>Venha conferir!</span>
+                </p>
+            </div>
+            <div class="box-orquestra2 col-sm" data-anime="right">
+                <h5>Titulo tituloso</h5>
+                <p class="txt-orquestra">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                vulputate fringilla. Donec lacinia congue felis in faucibus.<br><br>
+
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                vulputate fringilla. Donec lacinia congue felis in faucibus.<br><br>
+                <span>Data:</span>XX/XX/XX <br>
+                <span>Horario:</span> XXh - XXh <br>
+                <span>Endereço:</span> XXXXXXXXXXXXXXXX <br><br>
+                <span>Venha conferir!</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Musica Instrumental -->
+    <section class="musicaInstrumental" id="musicaInstrumental">
+        <div class="box-musica">
+            <h2>Musica Instrumental</h2>
+            <p data-anime="Top">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi omnis ipsum iusto, officia ad odio rerum nam voluptatem ut 
+                quisquam soluta dicta deserunt eum! Dicta incidunt illo 
+                sit temporibus voluptatum.
+            </p>
+        </div>
+        <div class="card-deck">
+            <div class=" card">
+                <img class="card-img-top" src="./conteudo/imagens/_DA_0135.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn-card btn btn-success"  data-toggle="modal" data-target="#exampleModal">Veja mais</button>
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                </div>
+            </div>
+            <div class=" card">
+                <img class="card-img-top" src="./conteudo/imagens/REI_8328.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn-card btn btn-success"  data-toggle="modal" data-target="#exampleModal">Veja mais</button>
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                </div>
+            </div>
+            <div class=" card">
+                <img class="card-img-top" src="./conteudo/imagens/IMG_1302.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn-card btn btn-success"  data-toggle="modal" data-target="#exampleModal">Veja mais</button>
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                </div>
+            </div>
+            <div class=" card">
+                <img class="card-img-top" src="./conteudo/imagens/IMG_3963Rjcastilho.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn-card btn btn-success"  data-toggle="modal" data-target="#exampleModal">Veja mais</button>
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                </div>
+            </div>
+            <div class=" card">
+                <img class="card-img-top" src="./conteudo/imagens/2017_10_28_semanamesasaopaulo_31.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn-card btn btn-success"  data-toggle="modal" data-target="#exampleModal">Veja mais</button>
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Title Title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="espace-modal modal-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit aliquid, eius modi
+                            illum neque tempora autem rem tenetur accusamus, molestiae in temporibus repudiandae voluptatum
+                            non quis! Deleniti, minus nulla!
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de fotos thumbnail -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+        <div>
+            <h2>Galeria de Fotos</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo suscipit vero ad perferendis 
+                eligendi aliquid eos debitis quidem autem quia, fugiat iusto blanditiis? Nulla explicabo 
+                eveniet cupiditate! Iste, perferendis officiis.
+            </p>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/DSC_8237.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/DSC_8237.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/DSC_8269.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/DSC_8269.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/DSC_8013.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/DSC_8013.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/DSC_8022.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/DSC_8022.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/Estandes_45.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/Estandes_45.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/Estandes_35.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/Estandes_35.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/Estandes_04.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/Estandes_04.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/DSC_8651.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/DSC_8651.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/Estandes_41.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/Estandes_41.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/IMG_1191.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/IMG_1191.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/Estandes_51.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/Estandes_51.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                        data-image="./conteudo/imagens/Estandes_34.jpg"
+                        data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                            src="./conteudo/imagens/Estandes_34.jpg"
+                            alt="Another alt text">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Modal galeria -->
+            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="image-gallery-title"></h4>
+                            <button type="button" class="close" data-dismiss="modal"><span
+                                    aria-hidden="true">×</span><span class="sr-only">Close</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i
+                                    class="fa fa-arrow-left"></i>
+                            </button>
+
+                            <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i
+                                    class="fa fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Fim Galeria de fotos thumbnail -->
+        </div>
+        </div>
+    </section>
+
+    <!-- Dança -->
+    <section class="danca" id="danca">
+        <div>
+            <h2>Dança</h2>
+        </div>
+        <div class="row">
+            <div class="box-danca col-12" data-anime="left">
+                <h5>Apresentação 1</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                vulputate fringilla. Donec lacinia congue felis in faucibus.<br><br>
+
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                vulputate fringilla. Donec lacinia congue felis in faucibus.<br><br>
+                <span>Data:</span>XX/XX/XX <br>
+                <span>Horario:</span> XXh - XXh <br>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box-danca col-12" data-anime="right">
+                <h5>Apresentação 2</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                vulputate fringilla. Donec lacinia congue felis in faucibus.<br><br>
+
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                vulputate fringilla. Donec lacinia congue felis in faucibus.<br><br>
+                <span>Data:</span>XX/XX/XX <br>
+                <span>Horario:</span> XXh - XXh <br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artesanato -->
+    <section class="artesanato" id="artesanato">
+        <div>
+            <h2> Artesanato Regional </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis officia reiciendis maxime eaque,
+                veniam quos porro aspernatur qui aliquam vero saepe natus assumenda
+                modi iste, doloremque eum unde, consequatur vel?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis officia reiciendis maxime eaque,
+                veniam quos porro aspernatur qui aliquam vero saepe natus assumenda
+                modi iste, doloremque eum unde, consequatur vel?
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img class="img-section" src="./conteudo/imagens/DSC_8277.jpg" alt="img section">
+                <p>Descrição<br>
+                    Descritiva<br>
+                    Descretivante
+                </p>
+            </div>
+            <div class="col-sm">
+                <img class="img-section" src="./conteudo/imagens/DSC_8288.jpg" alt="img section">
+                <p class="txt-descricao">Descrição<br>
+                    Descritiva<br>
+                    Descretivante
+                </p>
+            </div>
+            <div class="col-sm">
+                <img class="img-section" src="./conteudo/imagens/DSC_8290.jpg" alt="img section">
+                <p class="txt-descricao">Descrição<br>
+                    Descritiva<br>
+                    Descretivante
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img class="img-section" src="./conteudo/imagens/DSC_8277.jpg" alt="img section">
+                <p class="txt-descricao">Descrição<br>
+                    Descritiva<br>
+                    Descretivante
+                </p>
+            </div>
+            <div class="col-sm">
+                <img class="img-section" src="./conteudo/imagens/DSC_8288.jpg" alt="img section">
+                <p class="txt-descricao">Descrição<br>
+                    Descritiva<br>
+                    Descretivante
+                </p>
+            </div>
+            <div class="col-sm">
+                <img class="img-section" src="./conteudo/imagens/DSC_8290.jpg" alt="img section">
+                <p class="txt-descricao">Descrição<br>
+                    Descritiva<br>
+                    Descretivante
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img class="img-section" src="./conteudo/imagens/DSC_8277.jpg" alt="img section">
+                <p class="txt-descricao">Descrição<br>
+                    Descritiva<br>
+                    Descretivante
+                </p>
+            </div>
+            <div class="col-sm">
+                <img class="img-section" src="./conteudo/imagens/DSC_8288.jpg" alt="img section">
+                <p class="txt-descricao">Descrição<br>
+                    Descritiva<br>
+                    Descretivante
+                </p>
+            </div>
+            <div class="col-sm">
+                <img class="img-section" src="./conteudo/imagens/DSC_8290.jpg" alt="img section">
+                <p class="txt-descricao">Descrição<br>
+                    Descritiva<br>
+                    Descretivante
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comidas Tipícas -->
+    <section class="comidasTipicas" id="comidasTipicas">
+        <div class="comidas-txt">
+            <h2>Comidas Tipícas</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Fugit ipsa dicta adipisci molestias voluptatum harum deserunt delectus, 
+                ab eveniet doloremque perferendis repellat, debitis expedita 
+                voluptate sed iusto eum veritatis earum?<br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Fugit ipsa dicta adipisci molestias voluptatum harum deserunt delectus, 
+                ab eveniet doloremque perferendis repellat, debitis expedita 
+                voluptate sed iusto eum veritatis earum?
+            </p>
+        </div>
+        <ul class="list-unstyled">
+            <li class="media">
+                <div class="row">
+                    <div class="col-sm img-list">
+                        <img src="./conteudo/imagens/Estandes_51.jpg" class="img-miniatura" alt="...">
+                    </div>
+                    <div class="col-sm media-body">
+                        <h5 class="mt-0 mb-1">Produto 1</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+            </li>
+            <li class="media my-4">
+                <div class="row">
+                    <div class="col-sm img-list">
+                        <img src="./conteudo/imagens/DSC_8651.jpg" class="img-miniatura" alt="...">
+                    </div>
+                    <div class="col-sm media-body">
+                        <h5 class="mt-0 mb-1">Produto 1</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+            </li>
+            <li class="media">
+                <div class="row">
+                    <div class="col-sm img-list">
+                        <img src="./conteudo/imagens/Estandes_34.jpg" class="img-miniatura" alt="...">
+                    </div>
+                    <div class="col-sm media-body">
+                        <h5 class="mt-0 mb-1">Produto 1</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+            </li>
+            <li class="media my-4">
+                <div class="row">
+                    <div class="col-sm img-list">
+                        <img src="./conteudo/imagens/Estandes_41.jpg" class="img-miniatura" alt="...">
+                    </div>
+                    <div class="col-sm media-body">
+                        <h5 class="mt-0 mb-1">Produto 1</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+            </li>
+            <li class="media my-4">
+                <div class="row">
+                    <div class="col-sm img-list">
+                        <img src="./conteudo/imagens/Estandes_35.jpg" class="img-miniatura" alt="...">
+                    </div>
+                    <div class="col-sm media-body">
+                        <h5 class="mt-0 mb-1">Produto 1</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+            </li>
+            <li class="media">
+                <div class="row">
+                    <div class="col-sm img-list">
+                        <img src="./conteudo/imagens/Estandes_04.jpg" class="img-miniatura" alt="...">
+                    </div>
+                    <div class="col-sm media-body">
+                        <h5 class="mt-0 mb-1">Produto 1</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Workshop -->
+    <section class="workshop" id="workshop">
+        <div>
+            <h2>Workshop</h2>
+        </div>
+        <div class="row">
+            <div class="box-workshop float-left" data-anime="Top">
+                <h5>Titulo tituloso</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                vulputate fringilla. Donec lacinia congue felis in faucibus.<br><br>
+
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                vulputate fringilla. Donec lacinia congue felis in faucibus.<br><br>
+                <span>Data:</span>XX/XX/XX <br>
+                <span>Horario:</span> XXh - XXh <br>
+                <span>Endereço:</span> XXXXXXXXXXXXXXXX <br><br>
+                <span>Agende sua aula!</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Espaço Kids -->
+    <section class="espacoKids" id="espacoKids">
+        <div class="row">
+            <h2>Espaço Kids</h2>
+        </div>
+        <div class="row" data-anime="Top">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel est nobis sunt.<br>
+            Nesciunt sit et dolorum voluptates quo hic omnis cum porro minima, <br>
+            exercitationem facere recusandae non commodi a obcaecati.<br><br>
+
+            <span>Data:</span>XX/XX/XX <br>
+            <span>Horario:</span> XXh - XXh <br>
+            <span>Endereço:</span> XXXXXXXXXXXXXXXX <br><br>
+            <span>Traga seu filho para visitar</span>
+            </p>
+        </div>
+        <div class="row">
+            <h3 class="descritivo-kids">
+                Confira as atividades:
+            </h3>
+        </div>
+        <div class="row">
+            <!-- carrot -->
+            <div class="col-md-2">
+                <a class="" href="#" data-image-id="" data-toggle="modal" data-target="#exampleModal2">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="carrot" 
+                    class="icon-espaco-kids svg-inline--fa fa-carrot fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M298.2 156.6c-52.7-25.7-114.5-10.5-150.2 32.8l55.2 55.2c6.3 6.3 6.3 16.4 0 22.6-3.1 3.1-7.2 4.7-11.3 4.7s-8.2-1.6-11.3-4.7L130.4 217 2.3 479.7c-2.9 6-3.1 13.3 0 19.7 5.4 11.1 18.9 15.7 30 10.3l133.6-65.2-49.2-49.2c-6.3-6.2-6.3-16.4 0-22.6 6.3-6.2 16.4-6.2 22.6 0l57 57 102-49.8c24-11.7 44.5-31.3 57.1-57.1 30.1-61.7 4.5-136.1-57.2-166.2zm92.1-34.9C409.8 81 399.7 32.9 360 0c-50.3 41.7-52.5 107.5-7.9 151.9l8 8c44.4 44.6 110.3 42.4 151.9-7.9-32.9-39.7-81-49.8-121.7-30.3z"></path></svg>
+                </a>
+            </div>
+            <!-- headset -->
+            <div class="col-md-2">
+                <a class="" href="#" data-image-id="" data-toggle="modal" data-target="#exampleModal2">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headset" 
+                    class="icon-espaco-kids svg-inline--fa fa-headset fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z"></path></svg>
+                </a>
+            </div>
+            <!-- chess -->
+            <div class="col-md-2">
+                <a class="" href="#" data-image-id="" data-toggle="modal" data-target="#exampleModal2">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chess" 
+                    class="icon-espaco-kids svg-inline--fa fa-chess fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M76.1 210.2h103.7l34.6-95.1c2.8-7.8-3-16.1-11.3-16.1H152V68.8h21.6c3.3 0 6-2.7 6-6V40.4c0-3.3-2.7-6-6-6h-28.4V6c0-3.3-2.7-6-6-6h-22.4c-3.3 0-6 2.7-6 6v28.4H82.4c-3.3 0-6 2.7-6 6v22.4c0 3.3 2.7 6 6 6H104V99H52.8c-8.3 0-14.1 8.3-11.3 16.1zm237.2 90.7l24.9 17c.1 18.1-.2 63.9-11.9 114.5h147.5c-11.7-50.5-12-96.3-11.9-114.5l24.9-16.9c1.1-.7 1.7-1.9 1.7-3.2v-69.9c0-2.1-1.7-3.9-3.9-3.9h-27.7c-2.1 0-3.9 1.7-3.9 3.9v31.5h-22.7v-31.5c0-2.1-1.7-3.9-3.9-3.9h-52.9c-2.1 0-3.9 1.7-3.9 3.9v31.5h-22.7v-31.5c0-2.1-1.7-3.9-3.9-3.9h-27.7c-2.1 0-3.9 1.7-3.9 3.9v69.9c.2 1.2.8 2.4 1.9 3.1zm71.5 52c0-8.4 6.8-15.2 15.2-15.2s15.2 6.8 15.2 15.2v30.3h-30.3v-30.3zm119.8 117.2L491 459.4v-15.6c0-2.1-1.7-3.9-3.9-3.9H312.9c-2.1 0-3.9 1.7-3.9 3.9v15.6L295.3 470c-.9.7-1.5 1.9-1.5 3v35c0 2.1 1.7 3.9 3.9 3.9h204.5c2.1 0 3.9-1.7 3.9-3.9v-35c0-1.1-.5-2.2-1.5-2.9zm-259.8-10.8l-22.1-14.2V417c0-3.3-2.7-6-6-6H39.3c-3.3 0-6 2.7-6 6v28.1l-22.1 14.2c-1.7 1.1-2.8 3-2.8 5.1V506c0 3.3 2.7 6 6 6h227.2c3.3 0 6-2.7 6-6v-41.6c0-2.1-1-4-2.8-5.1zm-45-208.9c3.3 0 6-2.7 6-6v-20.8c0-3.3-2.7-6-6-6H56.2c-3.3 0-6 2.7-6 6v20.8c0 3.3 2.7 6 6 6H82c0 28.8 2.5 95.1-17.4 153.2h126.8c-19.6-57-17.4-121.5-17.4-153.2z"></path></svg>
+                </a>
+            </div>
+            <!-- dice -->
+            <div class="col-md-2" >
+                <a class="" href="#" data-image-id="" data-toggle="modal" data-target="#exampleModal2">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dice-d6"
+                    class="icon-espaco-kids svg-inline--fa fa-dice-d6 fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M422.19 109.95L256.21 9.07c-19.91-12.1-44.52-12.1-64.43 0L25.81 109.95c-5.32 3.23-5.29 11.27.06 14.46L224 242.55l198.14-118.14c5.35-3.19 5.38-11.22.05-14.46zm13.84 44.63L240 271.46v223.82c0 12.88 13.39 20.91 24.05 14.43l152.16-92.48c19.68-11.96 31.79-33.94 31.79-57.7v-197.7c0-6.41-6.64-10.43-11.97-7.25zM0 161.83v197.7c0 23.77 12.11 45.74 31.79 57.7l152.16 92.47c10.67 6.48 24.05-1.54 24.05-14.43V271.46L11.97 154.58C6.64 151.4 0 155.42 0 161.83z"></path></svg>
+                </a>
+            </div>
+            <!-- puzzle-pice -->
+            <div class="col-md-2" >
+                <a class="" href="#" data-image-id="" data-toggle="modal" data-target="#exampleModal2">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="puzzle-piece" 
+                    class="icon-espaco-kids svg-inline--fa fa-puzzle-piece fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path fill="currentColor" d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"></path></svg>
+                </a>
+            </div>
+            <!-- gamepad -->
+            <div class="col-md-2" >
+                <a class="" href="#" data-image-id="" data-toggle="modal" data-target="#exampleModal2">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gamepad" 
+                    class="icon-espaco-kids svg-inline--fa fa-gamepad fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <path fill="currentColor" d="M480 96H160C71.6 96 0 167.6 0 256s71.6 160 160 160c44.8 0 85.2-18.4 114.2-48h91.5c29 29.6 69.5 48 114.2 48 88.4 0 160-71.6 160-160S568.4 96 480 96zM256 276c0 6.6-5.4 12-12 12h-52v52c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-52H76c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h52v-52c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h52c6.6 0 12 5.4 12 12v40zm184 68c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-80c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-box" id="faq-box">
+        <div>
+            <h2>
+                FAQ
+            </h2>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                Eum repudiandae, illum sint quis explicabo dolor, maiores amet<br> 
+                non enim corporis, rem blanditiis tempora. Nulla, dolores labore <br>
+                aspernatur dignissimos accusantium est.
+            </p>
+        </div>
+        <div id="accordion">
+            <div class="card-faq card mt-5">
+                <button class="faq-item" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            Pergunta 1
+                        </h5>
+                    </div>
+                </button>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="faq-item-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="card-faq card">
+                <button class="faq-item collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            Pergunta 2
+                        </h5>
+                    </div>
+                </button>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="faq-item-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="card-faq card">
+                <button class="faq-item collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            Pergunta 3
+                        </h5>
+                    </div>
+                </button>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="faq-item-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="card-faq card">
+                <button class="faq-item collapsed" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="false" aria-controls="collapseFour">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            Pergunta 4
+                        </h5>
+                    </div>
+                </button>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="faq-item-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="card-faq card">
+                <button class="faq-item collapsed" data-toggle="collapse" data-target="#collapseFive"
+                    aria-expanded="false" aria-controls="collapseFive">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            Pergunta 5
+                        </h5>
+                    </div>
+                </button>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="faq-item-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato" id="contato">
+        <form novalidate class="mt-5 mb-5 needs-validation" action="" name="contato" method="POST" data-netlify="true">
+            <div class="contato-txt">
+                <h2>Contato</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Quas necessitatibus, inventore autem libero iste quam temporibus 
+                    est corrupti unde soluta fuga, beatae sapiente, facilis 
+                    quibusdam sint ullam consectetur nobis alias.
+                </p>
+            </div>
+            <div class="mb-3">
+                <label for="inputNome">Nome:</label>
+                <input type="text" name="nome-contato" class="form-control" id="inputNome" placeholder="Digite seu nome" value="" required>
+                <div class="valid-feedback">
+                    Parece bom!
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Email:</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                    placeholder="Digite seu email" name="email-contato" required>
+                <!-- <small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar seu e-mail com mais ninguém.</small> -->
+            </div>
+            <h4 class="title-fold" for="inputFile">Anexar um arquivo:</h4>
+            <div class="mb-3 custom-file">
+                <label for="inputFile" class="custom-file-label" name="arquivo">
+                    <span class="file-name" id="filename">
+                        <input type="file" name="arquivo-contato" class="custom-file-input" id="inputFile" required>
+                    </span>
+                    <!-- Nenhum arquivo selecionado... -->
+                </label>
+                <div class="invalid-feedback">Arquivo invalido, tente novamente.</div>
+            </div>
+            <div class="form-group">
+                <label for="inputText">Dúvidas:</label>
+                <textarea class="form-control" id="inputText" rows="3" name="mensagem-contato"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" value="" name="checkbox-contato" id="inputCheck" required>
+                <label for="inputCheck" class="form-check-label" >
+                    Eu aceito as condições a cima.
+                </label>
+                <div class="invalid-feedback">
+                    Você deve concordar antes de enviar.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <!-- <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#ModalCenter" id="subButton">Enviar</button> -->
+        </form>
+        <!-- Alert -->
+        <!-- <div class="alert alert-success alert-dismissible fade show" role="alert" id="buttonAlert">
+            <strong>Success!</strong> You just showed an alert.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+        </div> -->
+        <div class="social-media">
+            <h5>
+                Redes Sociais:
+            </h5>
+            <div class="row">
+                <div class="social-icon-box col-sm-2">
+                    <a href="https://www.facebook.com/prazeresdamesa" target="_blank">
+                        <img src="./icon/facebook-circular.svg" alt="Facebook" class="social-icon"/>
+                    </a>
+                </div>
+                <div class="social-icon-box col-sm-2">
+                    <a href="https://www.instagram.com/prazeresdamesa/" target="_blank">
+                        <img src="./icon/instagram-circular.svg" alt="Instagram" class="social-icon"/>
+                    </a>
+                </div>
+                <div class="social-icon-box col-sm-2">
+                    <a href="https://twitter.com/prazeresdamesa" target="_blank">
+                        <img src="./icon/twitter-circular.svg" alt="Twitter" class="social-icon"/>
+                    </a>
+                </div>
+                <div class="social-icon-box col-sm-2">
+                    <a href="https://www.youtube.com/channel/UCq9WnyF9HTPsMJ-Khwr1c0A" target="_blank">
+                        <img src="./icon/youtube-circular.svg" alt="Youtube" class="social-icon"/>
+                    </a>
+                </div>
+            </div>
+        <!-- <div>
+            <div class="alert alert-success" role="alert">
+                A simple success alert—check it out!
+            </div>-->
+        </div>
+        <!-- <div class="">
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fprazeresdamesa&layout=button&size=large&width=117&height=28&appId" 
+            width="117" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div> -->
+    </section>
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/smoothScroll.js"></script>
+<script src="./js/cronometro.js"></script>
+<script src="./js/scroll-animate.js"></script>
+<script src="./js/form.js"></script>
+</html>

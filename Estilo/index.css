@@ -1,0 +1,835 @@
+@charset "UTF-8";
+/* Autor: Caique Sousa */
+[data-anime] {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+[data-anime=left] {
+  transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime=right] {
+  transform: translate3d(100px, 0, 0);
+}
+
+[data-anime=Top] {
+  transform: translate3d(0, -100px, 0);
+}
+
+[data-anime=bottom] {
+  transform: translate3d(0, 100px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* sobreescrevendo css*/
+.fa, .fas {
+  padding-top: 3px;
+}
+
+.col-md-12 {
+  padding: 0;
+}
+
+.espace-modal {
+  padding: 2%;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Estilo NavBar */
+.img-logo-menu {
+  width: 100%;
+  height: 100%;
+  max-width: 120px;
+  display: block;
+}
+
+.navbar {
+  background-color: rgba(34, 139, 34, 0.4);
+  /*forestgreen;34 139 34 0.4*/
+}
+
+.nav-item a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+.nav-item a a:hover {
+  color: yellow;
+}
+.nav-item a a:active {
+  color: yellowgreen;
+}
+
+/* sobre escrevendo css */
+.dropdown-menu {
+  background-color: rgba(34, 139, 34, 0.4);
+}
+.dropdown-menu a:hover {
+  background-color: forestgreen;
+}
+
+.navbar-toggler {
+  background-color: #28a745;
+  border: 1px solid #ffc107;
+}
+
+.navbar-toggler-icon {
+  padding-top: 3px;
+  color: white;
+  font-weight: 900;
+}
+
+/* Fim NavBar */
+/* Estilo btnUpHome  */
+.btnUpTopo {
+  width: 100%;
+  max-width: 60px;
+  color: forestgreen;
+  font-size: 50px;
+  margin-bottom: 10px;
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10000000;
+}
+.btnUpTopo:hover {
+  color: yellowgreen;
+}
+
+/* Fim btnUpHome */
+/* Estilo Home */
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../conteudo/imagens/2017_10_28_semanamesasaopaulo_78.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-logo {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 230px;
+}
+
+.box-home p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(21, 87, 36, 0.9);
+}
+
+.cronometro {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+}
+.cronometro p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: #ffcb00;
+}
+.cronometro span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.arrowHome {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  padding-top: 3px;
+  font-size: 2rem;
+  color: #ffcb00;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.icoArrowHome {
+  padding-top: 3px;
+  font-size: 4rem;
+  color: #ffcb00;
+}
+
+/* Fim Home */
+/* Estilo Orquestra */
+.orquestra {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://theatromunicipal.org.br/wp-content/uploads/2018/01/OrquestraSinfonicaMunicipal-Coral-GseSilva-Site8.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.orquestra h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  margin: 10px;
+}
+
+.box-orquestra1 {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(21, 87, 36, 0.9);
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+.box-orquestra1 h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: yellow;
+  padding: 15px;
+}
+
+.box-orquestra2 {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(21, 87, 36, 0.9);
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+.box-orquestra2 h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: yellow;
+  padding: 15px;
+}
+
+.txt-orquestra {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.txt-orquestra span {
+  color: yellow;
+  font-weight: 600;
+}
+
+/* Fim Orquestra */
+/* Estilo Musica Instrumental */
+.musicaInstrumental {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.alphacoders.com/108/108181.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+}
+
+.box-musica h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  padding: 2%;
+  padding-top: 20px;
+}
+.box-musica p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  background-color: rgba(21, 87, 36, 0.9);
+}
+
+.card-img-top {
+  height: 250px;
+}
+
+.card-deck {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 40px;
+}
+.card-deck .btn-card {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Fim Musica Instrumental */
+/* Estilo Galeria */
+.galeria {
+  width: 100%;
+  height: 100vh;
+  background: #ffcb00;
+  background: -moz-radial-gradient(circle, #ffcb00 0%, #3ba434 100%);
+  background: -webkit-radial-gradient(circle, #ffcb00 0%, #3ba434 100%);
+  background: radial-gradient(circle, #ffcb00 0%, #3ba434 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb00",endColorstr="#3ba434",GradientType=1);
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.galeria h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  padding: 2%;
+}
+.galeria p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: azure;
+  text-align: center;
+  padding: 2%;
+}
+
+.btn:focus,
+.btn:active,
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer {
+  display: block;
+}
+
+.thumb {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.img-thumbnail:hover {
+  cursor: zoom-in;
+  box-shadow: 10px 10px 20px black;
+}
+
+/* btn setas da galeria thumb */
+.btn-secondary {
+  color: #ffc107;
+  background-color: #28a745;
+  border-color: #ffc107;
+}
+.btn-secondary:hover {
+  color: #28a745;
+  background-color: #ffc107;
+  border-color: #28a745;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+/* Fim Galeria */
+/* Estilo Dança */
+.danca {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../conteudo/imagens/IMG_3963Rjcastilho.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 65px;
+}
+.danca h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  margin: 10px;
+}
+
+.box-danca {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(21, 87, 36, 0.9);
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.box-danca h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: green;
+  padding: 15px;
+  background-color: yellow;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.box-danca p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.box-danca p span {
+  color: yellow;
+  font-weight: 600;
+}
+
+/* Fim Dança */
+/* Estilo Artesanato */
+.artesanato {
+  height: 100%;
+  background: #ffcb00;
+  background: -moz-linear-gradient(90deg, #ffcb00 0%, #3ba434 100%);
+  background: -webkit-linear-gradient(90deg, #ffcb00 0%, #3ba434 100%);
+  background: linear-gradient(90deg, #ffcb00 0%, #3ba434 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb00",endColorstr="#3ba434",GradientType=1);
+  padding-bottom: 40px;
+  padding-top: 75px;
+}
+.artesanato h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  padding: 10px;
+}
+.artesanato p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  color: greenyellow;
+  padding: 2%;
+}
+
+.img-section {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  border-radius: 10%;
+  margin: 0 auto;
+  cursor: pointer;
+  height: 100vh;
+  max-height: 135.5px;
+}
+
+/* Fim Artesanato */
+/* Estilo Comidas Típicas*/
+.comidasTipicas {
+  height: 100%;
+  background-image: url("../conteudo/imagens/1C7A5369Rjcastilho.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.comidasTipicas li {
+  background-color: rgba(21, 87, 36, 0.9);
+  color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 15px;
+  padding: 25px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.comidasTipicas ul {
+  margin-top: 85px;
+}
+.comidasTipicas h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  padding: 2%;
+}
+.comidasTipicas p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding: 2%;
+  background-color: rgba(21, 87, 36, 0.9);
+}
+
+.img-list {
+  display: inline-block;
+  width: 100%;
+}
+.img-list .img-miniatura {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Fim Comidas Típicas */
+/* Estilo Workshop */
+.workshop {
+  height: 100%;
+  background-image: url("../conteudo/imagens/IMG_0676 LEO HAMU.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+}
+.workshop h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  margin: 10px;
+}
+
+.box-workshop {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(21, 87, 36, 0.9);
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+.box-workshop h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: yellow;
+  padding: 15px;
+}
+.box-workshop p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.box-workshop p span {
+  color: yellow;
+  font-weight: 600;
+}
+
+/* Fim Workshop */
+/* Estilo Espaço Kids */
+.espacoKids {
+  background-image: url("../conteudo/imagens/1C7A5330Rjcastilho.JPG");
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+  padding-bottom: 85px;
+}
+.espacoKids h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.espacoKids p {
+  background-color: rgba(21, 87, 36, 0.9);
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 75px;
+}
+.espacoKids span {
+  color: yellow;
+  font-weight: 600;
+}
+
+.icon-espaco-kids {
+  color: yellow;
+  width: 130px;
+  border: 3px solid yellow;
+  padding: 3%;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.icon-espaco-kids:hover {
+  color: yellowgreen;
+  border: 3px solid yellowgreen;
+}
+
+.img-modal {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.descritivo-kids {
+  font-family: "Roboto", sans-serif;
+  margin-left: 95px;
+  margin-bottom: 35px;
+  color: yellow;
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-align: left;
+}
+
+/*Fim Espaço Kids */
+/* Estilo FAQ */
+.faq-box {
+  background: #3ba434;
+  background: -moz-radial-gradient(circle, #3ba434 0%, #ffcb00 100%);
+  background: -webkit-radial-gradient(circle, #3ba434 0%, #ffcb00 100%);
+  background: radial-gradient(circle, #3ba434 0%, #ffcb00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3ba434",endColorstr="#ffcb00",GradientType=1);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+  padding-bottom: 85px;
+}
+.faq-box h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.faq-box p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(21, 87, 36, 0.9);
+  border-radius: 10px;
+}
+
+/* sobreescrevendo css */
+.card-faq {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border: none;
+  background-color: transparent;
+  padding: 2px;
+}
+
+/* sobreescrevendo css */
+.card-header {
+  border: none;
+}
+
+.faq-item {
+  background-color: rgba(21, 87, 36, 0.7);
+  color: yellow;
+  text-decoration: none;
+  border-color: yellow;
+  border-radius: 15px;
+}
+
+.faq-item-body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(21, 87, 36, 0.7);
+  padding: 2%;
+  color: white;
+  border: none;
+  width: 100% px;
+  max-width: 875px;
+  margin: 0 auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Fim FAQ */
+/* Estilo Contato */
+.contato {
+  background-image: url("../conteudo/imagens/DSC_8281.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 85px;
+  padding-bottom: 50px;
+}
+.contato form {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+.contato form label {
+  font-family: "Roboto", sans-serif;
+  color: yellow;
+  font-weight: 600;
+  font-size: 18px;
+}
+.contato form .form-control {
+  color: green;
+  font-weight: 700;
+}
+.contato form .file-name {
+  color: green;
+}
+.contato form .btn-primary {
+  background-color: yellow;
+  color: green;
+  border-color: yellow;
+  font-weight: 700;
+}
+.contato form .btn-primary:hover {
+  background-color: green;
+  border-color: green;
+  color: yellow;
+  font-weight: 700;
+}
+.contato form .form-check-input {
+  margin-top: 0.5rem;
+}
+.contato h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+.contato p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  background-color: rgba(34, 139, 34, 0.7);
+  border-radius: 10px;
+}
+
+.custom-file-label::after {
+  content: "Procurar";
+}
+
+.social-media {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+.social-media h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: yellow;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  width: 100%;
+  max-width: 65px;
+  display: block;
+  margin: 0 auto;
+  padding: 2%;
+}
+.social-icon:hover {
+  border: 3px solid yellow;
+  border-radius: 10px;
+}
+
+.social-icon-box {
+  margin: 0 auto;
+}
+
+.title-fold {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: yellow;
+}
+
+/* Fim Contato */
+
+/*# sourceMappingURL=index.css.map */
