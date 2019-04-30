@@ -21,6 +21,14 @@
   transform: translate3d(0, 100px, 0);
 }
 
+[data-anime=front] {
+  transform: translate3d(0, 0, 150px);
+}
+
+[data-anime=back] {
+  transform: translate3d(0, 0, -150px);
+}
+
 [data-anime].animate {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
@@ -59,7 +67,7 @@
 }
 
 .navbar {
-  background-color: rgba(34, 139, 34, 0.4);
+  background-color: forestgreen;
   /*forestgreen;34 139 34 0.4*/
 }
 
@@ -77,7 +85,7 @@
 
 /* sobre escrevendo css */
 .dropdown-menu {
-  background-color: rgba(34, 139, 34, 0.4);
+  background-color: forestgreen;
 }
 .dropdown-menu a:hover {
   background-color: forestgreen;
@@ -118,7 +126,11 @@
 .home {
   width: 100%;
   height: 100%;
-  background-color: #28a745;
+  background-image: url("https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/2017_10_28_semanamesasaopaulo_78-1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .img-logo {
@@ -191,7 +203,11 @@
 .orquestra {
   width: 100%;
   height: 100%;
-  background-color: #ffc107;
+  background-image: url("https://theatromunicipal.org.br/wp-content/uploads/2018/01/OrquestraSinfonicaMunicipal-Coral-GseSilva-Site8.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -301,7 +317,10 @@
 .galeria {
   width: 100%;
   height: 100%;
-  background: #ffcb00;
+  background: -moz-radial-gradient(circle, #ffcb00 0%, #3ba434 100%);
+  background: -webkit-radial-gradient(circle, #ffcb00 0%, #3ba434 100%);
+  background: radial-gradient(circle, #ffcb00 0%, #3ba434 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb00",endColorstr="#3ba434",GradientType=1);
   padding-top: 75px;
   padding-bottom: 75px;
 }
@@ -365,7 +384,11 @@ button:active {
 .danca {
   width: 100%;
   height: 100%;
-  background-color: #ffc107;
+  background-image: url("https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/REI_8328.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 65px;
   padding-bottom: 65px;
 }
@@ -448,7 +471,11 @@ button:active {
 /* Estilo Comidas Típicas*/
 .comidasTipicas {
   height: 100%;
-  background-color: #28a745;
+  background-image: url("https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/1C7A5369Rjcastilho.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 75px;
   padding-bottom: 75px;
 }
@@ -546,7 +573,11 @@ button:active {
 .espacoKids {
   width: 100%;
   height: 100%;
-  background-color: #28a745;
+  background-image: url("https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/1C7A5349Rjcastilho.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 75px;
   padding-bottom: 85px;
 }
@@ -692,7 +723,7 @@ button:active {
 /* Fim FAQ */
 /* Estilo Contato */
 .contato {
-  background-image: url("../conteudo/imagens/DSC_8281.jpg");
+  background-image: url("https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/DSC_8281.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
