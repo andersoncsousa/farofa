@@ -52,6 +52,11 @@ $color-box-txt: rgba(21, 87, 36, 0.9);
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
 /* sobreescrevendo css*/
 .fa, .fas {
     padding-top: 3px;
@@ -89,6 +94,7 @@ $color-box-txt: rgba(21, 87, 36, 0.9);
     font-weight: 500;
     a:hover { color: yellow; }
     a:active { color: yellowgreen; }
+    scroll-behavior: smooth;
 }
 
 /* sobre escrevendo css */

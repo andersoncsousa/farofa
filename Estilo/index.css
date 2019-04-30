@@ -40,6 +40,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
 /* sobreescrevendo css*/
 .fa, .fas {
   padding-top: 3px;
@@ -75,6 +80,7 @@
   font-family: "Roboto", sans-serif;
   color: white;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 .nav-item a a:hover {
   color: yellow;
