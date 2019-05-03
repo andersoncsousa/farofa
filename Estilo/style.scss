@@ -12,6 +12,103 @@ $color-box-txt: rgba(21, 87, 36, 0.9);
 // hexa: #3ba434
 // rgb: 59,164,52
 
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+//   .active, .dot:hover {
+//     background-color: #717171;
+//   }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .fade:not(.show) {
+    opacity: 1;
+}
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
 [data-anime]{
     opacity: 0;
     transition: .3s;
@@ -85,7 +182,6 @@ html{
 
 .navbar {
     background-color: $bg-navbar;
-    /*forestgreen;34 139 34 0.4*/
 }
 
 .nav-item a {
@@ -95,6 +191,7 @@ html{
     a:hover { color: yellow; }
     a:active { color: yellowgreen; }
     scroll-behavior: smooth;
+    margin-left: 10px;
 }
 
 /* sobre escrevendo css */
@@ -140,8 +237,7 @@ html{
 .home {
     width: 100%;
     height: 100%;
-    // background-color: #28a745;
-    background-image: url('https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/2017_10_28_semanamesasaopaulo_78-1.jpg');
+    background-image: url('https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/bg-img-farofa-v1.png');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -218,7 +314,6 @@ html{
 .orquestra{
     width: 100%;
     height: 100%;
-    // background-color:#ffc107;
     background-image: url('https://theatromunicipal.org.br/wp-content/uploads/2018/01/OrquestraSinfonicaMunicipal-Coral-GseSilva-Site8.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -290,12 +385,11 @@ html{
 .musicaInstrumental {
     width: 100%;
     height: 100%;
-    background-color: #28a745;
-    // background-image: url('https://images.alphacoders.com/108/108181.jpg');
-    // background-attachment: fixed;
-    // background-position: center;
-    // background-size: cover;
-    // background-repeat: no-repeat;
+    background: rgb(59,164,52);
+    background: -moz-radial-gradient(circle, rgba(59,164,52,1) 0%, rgba(255,203,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(59,164,52,1) 0%, rgba(255,203,0,1) 100%);
+    background: radial-gradient(circle, rgba(59,164,52,1) 0%, rgba(255,203,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3ba434",endColorstr="#ffcb00",GradientType=1);
     padding-top: 75px;
     padding-bottom: 75px;
 }
@@ -321,10 +415,6 @@ html{
     }
 }
 
-.card-img-top {
-    height: 250px;
-}
-
 .card-deck {
     margin-left: 0;
     margin-right: 0;
@@ -340,7 +430,6 @@ html{
 .galeria{
     width: 100%;
     height: 100%;
-    // background: rgb(255,203,0);
     background: -moz-radial-gradient(circle, rgba(255,203,0,1) 0%, rgba(59,164,52,1) 100%);
     background: -webkit-radial-gradient(circle, rgba(255,203,0,1) 0%, rgba(59,164,52,1) 100%);
     background: radial-gradient(circle, rgba(255,203,0,1) 0%, rgba(59,164,52,1) 100%);
@@ -408,8 +497,7 @@ button:active {
 .danca{
     width: 100%;
     height: 100%;
-    // background-color:#ffc107;
-    background-image: url('https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/REI_8328.jpg');
+    background-image: url('https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/bg-img-danca-v1.png');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -461,10 +549,10 @@ button:active {
 .artesanato {
     height: 100%;
     background: rgb(255,203,0);
-    // background: -moz-linear-gradient(90deg, rgba(255,203,0,1) 0%, rgba(59,164,52,1) 100%);
-    // background: -webkit-linear-gradient(90deg, rgba(255,203,0,1) 0%, rgba(59,164,52,1) 100%);
-    // background: linear-gradient(90deg, rgba(255,203,0,1) 0%, rgba(59,164,52,1) 100%);
-    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb00",endColorstr="#3ba434",GradientType=1);
+    background: -moz-linear-gradient(90deg, rgba(255,203,0,1) 0%, rgba(59,164,52,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,203,0,1) 0%, rgba(59,164,52,1) 100%);
+    background: linear-gradient(90deg, rgba(255,203,0,1) 0%, rgba(59,164,52,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb00",endColorstr="#3ba434",GradientType=1);
     padding-bottom: 40px;
     padding-top: 75px;
     h2 {
@@ -491,7 +579,6 @@ button:active {
     display: block;
     border-radius: 10%;
     margin: $align-center;
-    cursor: pointer;
     height: 100%;
     max-height: 135.5px;
 }
@@ -500,8 +587,7 @@ button:active {
 /* Estilo Comidas Típicas*/
 .comidasTipicas {
     height: 100%;
-    // background-color: #28a745;
-    background-image: url('https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/1C7A5369Rjcastilho.jpg');
+    background-image: url('https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/bg-img-comidasT-v1.png');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -557,12 +643,11 @@ button:active {
 /* Estilo Workshop */
 .workshop{
     height: 100%;
-    background-color: #ffc107;
-    // background-image: url('../conteudo/imagens/IMG_0676\ LEO\ HAMU.jpg');
-    // background-attachment: fixed;
-    // background-position: center;
-    // background-size: cover;
-    // background-repeat: no-repeat;
+    background: rgb(255,203,0);
+    background: -moz-radial-gradient(circle, rgba(255,203,0,1) 50%, rgba(95,246,84,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,203,0,1) 50%, rgba(95,246,84,1) 100%);
+    background: radial-gradient(circle, rgba(255,203,0,1) 50%, rgba(95,246,84,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb00",endColorstr="#5ff654",GradientType=1);
     padding-top: 75px;
     h2 {
         font-family: $font-Default;
@@ -608,8 +693,7 @@ button:active {
 .espacoKids{
     width: 100%;
     height: 100%;
-    // background-color: #28a745;
-    background-image: url('https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/1C7A5349Rjcastilho.jpg');
+    background-image: url('https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/bg-img-espacoK-v1.png');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -645,9 +729,6 @@ button:active {
 }
 
 .icon-espaco-kids {
-    // width: 150px;
-    // height: 150px;
-    // margin: $align-center;
     color: yellow;
     width: 120px;
     height: 120px;
@@ -685,18 +766,13 @@ button:active {
 
 /* Estilo FAQ */
 .faq-box{
-    // background-image: url('../conteudo/imagens/Estandes_41.jpg');
+    width: 100%;
+    height: 100%;
     background: rgb(59,164,52);
     background: -moz-radial-gradient(circle, rgba(59,164,52,1) 0%, rgba(255,203,0,1) 100%);
     background: -webkit-radial-gradient(circle, rgba(59,164,52,1) 0%, rgba(255,203,0,1) 100%);
     background: radial-gradient(circle, rgba(59,164,52,1) 0%, rgba(255,203,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3ba434",endColorstr="#ffcb00",GradientType=1);
-    width: 100%;
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-top: 75px;
     padding-bottom: 85px;
     h2 {
@@ -764,8 +840,8 @@ button:active {
 
 /* Estilo Contato */
 .contato{
-    background-image: url('https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/DSC_8281.jpg');
     height: 100%;
+    background-image: url('https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/bg-img-contato-v1.png');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -786,6 +862,7 @@ button:active {
         .form-control{
             color: green;
             font-weight: 700;
+            border: 1px solid yellow;
         }
         .file-name{
             color: green;
@@ -830,6 +907,20 @@ button:active {
 
 .custom-file-label::after{
     content: "Procurar";
+    color: yellow;
+    background-color: green;
+}
+
+.custom-file-label{
+    border: 1px solid yellow;
+}
+
+ input[type=text]::placeholder{
+     color:green;
+}
+
+ input[type=email]::placeholder{
+    color:green;
 }
 
 .social-media{
