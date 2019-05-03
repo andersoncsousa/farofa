@@ -9,10 +9,7 @@
     <!-- style -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="./Estilo/style.css"> -->
-    <!-- <link rel="stylesheet" href="./Estilo/style.scss"> -->
     <link rel="stylesheet" href="./Estilo/index.css">
-
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="shortcut icon" href="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/favicon-farofa.png" type="image/x-icon" />
@@ -96,12 +93,14 @@
     <!-- Fim Nav menu -->
 
     <!-- btnUpHome -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div> 
     <div>
         <a href="#home">
             <i class=" btnUpTopo fas fa-arrow-up"></i>
         </a> 
     </div>
-    
     <!-- Home -->
     <section class="home" id="home">
         <div class="box-home">
@@ -127,7 +126,7 @@
     <section class="musicaInstrumental" id="musicaInstrumental">
         <div class="box-musica">
             <h2>Musica Instrumental</h2>
-            <p data-anime="Top">
+            <p data-anime="top">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Nisi omnis ipsum iusto, officia ad odio rerum nam voluptatem ut 
                 quisquam soluta dicta deserunt eum! Dicta incidunt illo 
@@ -263,8 +262,6 @@
         </div>
     </section>
     
-    
-
     <!-- Galeria de fotos thumbnail -->
     <section class="galeria" id="galeria">
         <div class="container">
@@ -589,7 +586,7 @@
         </div>
         <ul class="list-unstyled">
             <li class="media">
-                <div class="row" data-anime="Top">
+                <div class="row" data-anime="top">
                     <div class="col-sm img-list">
                         <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/img-comidaT1-v1.jpg" class="img-miniatura" alt="...">
                     </div>
@@ -602,7 +599,7 @@
                 </div>
             </li>
             <li class="media my-4">
-                <div class="row" data-anime="Top">
+                <div class="row" data-anime="top">
                     <div class="col-sm img-list">
                         <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/img-comidaT2-v1.jpg" class="img-miniatura" alt="...">
                     </div>
@@ -615,7 +612,7 @@
                 </div>
             </li>
             <li class="media">
-                <div class="row" data-anime="Top">
+                <div class="row" data-anime="top">
                     <div class="col-sm img-list">
                         <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/img-comidaT3-v1.jpg" class="img-miniatura" alt="...">
                     </div>
@@ -628,7 +625,7 @@
                 </div>
             </li>
             <li class="media my-4">
-                <div class="row" data-anime="Top">
+                <div class="row" data-anime="top">
                     <div class="col-sm img-list">
                         <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/img-comidaT4-v1.jpg" class="img-miniatura" alt="...">
                     </div>
@@ -641,7 +638,7 @@
                 </div>
             </li>
             <li class="media my-4">
-                <div class="row" data-anime="Top">
+                <div class="row" data-anime="top">
                     <div class="col-sm img-list">
                         <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/img-comidaT5-v1.jpg" class="img-miniatura" alt="...">
                     </div>
@@ -654,7 +651,7 @@
                 </div>
             </li>
             <li class="media">
-                <div class="row" data-anime="Top">
+                <div class="row" data-anime="top">
                     <div class="col-sm img-list">
                         <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/05/img-comidaT6-v1.jpg" class="img-miniatura" alt="...">
                     </div>
@@ -675,7 +672,7 @@
             <h2>Workshop</h2>
         </div>
         <div class="row">
-            <div class="box-workshop float-left" data-anime="Top">
+            <div class="box-workshop float-left" data-anime="top">
                 <h5>Titulo tituloso</h5>
                 <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                 purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
@@ -698,7 +695,7 @@
         <div class="row">
             <h2>Espaço Kids</h2>
         </div>
-        <div class="row" data-anime="Top">
+        <div class="row" data-anime="top">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel est nobis sunt.<br>
             Nesciunt sit et dolorum voluptates quo hic omnis cum porro minima, <br>
             exercitationem facere recusandae non commodi a obcaecati.<br><br>
@@ -914,7 +911,6 @@
                 <div class="valid-feedback">
                     Ok!
                 </div>
-                <!-- <small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar seu e-mail com mais ninguém.</small> -->
             </div>
             <label class="title-fold" for="inputFile">Anexar um arquivo:</label>
             <div class="mb-3 custom-file">
@@ -940,15 +936,7 @@
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
-            <!-- <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#ModalCenter" id="subButton">Enviar</button> -->
         </form>
-        <!-- Alert -->
-        <!-- <div class="alert alert-success alert-dismissible fade show" role="alert" id="buttonAlert">
-            <strong>Success!</strong> You just showed an alert.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-        </div> -->
         <div class="social-media">
             <h5>
                 Redes Sociais:
@@ -975,10 +963,6 @@
                     </a>
                 </div>
             </div>
-        <!-- <div>
-            <div class="alert alert-success" role="alert">
-                A simple success alert—check it out!
-            </div>-->
         </div>
         <!-- <div class="">
             <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fprazeresdamesa&layout=button&size=large&width=117&height=28&appId" 
